@@ -1,0 +1,3 @@
+.vscode/
+.terraform
+.pytest_cache
