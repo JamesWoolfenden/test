@@ -33,7 +33,7 @@ functions:
 resources:
   Resources:
     Bucket:
-  #bridgecrew:skip=BC_AWS_S3_13: not log
+  # checkov:skip=CKV_AWS_18: ADD REASON
       Type: AWS::S3::Bucket
       Properties:
         BucketName: ${self:service}-${self:provider.region}-${opt:stage, 'dev'}
