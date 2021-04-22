@@ -33,7 +33,7 @@ functions:
 resources:
   Resources:
     Bucket:
-  # checkov:skip=CKV_AWS_18: ADD REASON
+  #checkov:skip=CKV_AWS_18: ADD REASON
       Type: AWS::S3::Bucket
       Properties:
         BucketName: ${self:service}-${self:provider.region}-${opt:stage, 'dev'}
