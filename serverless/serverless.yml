@@ -23,7 +23,7 @@ plugins:
 
 package:
   patterns:
-    - '*.py'
+    - "*.py"
 
 functions:
   func1:
@@ -33,15 +33,14 @@ functions:
 resources:
   Resources:
     Bucket:
-    # checkov:skip=CKV_AWS_18: Access Logging not required
-    # bridgecrew:skip=BC_AWS_S3_13: not log
+  # bridgecrew:skip=BC_AWS_S3_13: not log
       Type: AWS::S3::Bucket
       Properties:
         BucketName: ${self:service}-${self:provider.region}-${opt:stage, 'dev'}
         BucketEncryption:
           ServerSideEncryptionConfiguration:
             - ServerSideEncryptionByDefault:
-               SSEAlgorithm: AES256
+                SSEAlgorithm: AES256
         PublicAccessBlockConfiguration:
           BlockPublicAcls: true
           BlockPublicPolicy: true
