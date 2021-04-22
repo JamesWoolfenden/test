@@ -34,7 +34,7 @@ resources:
   Resources:
     Bucket:
     # checkov:skip=CKV_AWS_18: Access Logging not required
-    # BC_AWS_S3_13
+    # bridgecrew:skip=BC_AWS_S3_13: not log
       Type: AWS::S3::Bucket
       Properties:
         BucketName: ${self:service}-${self:provider.region}-${opt:stage, 'dev'}
