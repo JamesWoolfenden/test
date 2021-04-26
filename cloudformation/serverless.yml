@@ -28,8 +28,7 @@ resources:
   Resources:
     Bucket:
       Type: AWS::S3::Bucket
-      # bridgecrew:skip=BC_AWS_S3_13:foo
-      # checkov:skip=CKV_AWS_18:foo
+      #bridgecrew:skip=BC_AWS_S3_13: not log
       Properties:
         BucketName: ${self:custom.bucket_names.uploads}
         BucketEncryption:

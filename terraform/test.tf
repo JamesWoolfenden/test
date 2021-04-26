@@ -19,5 +19,6 @@ POLICY
 }
 
 resource "aws_s3_bucket" "test" {
-    
+    # bridgecrew:skip=BC_AWS_S3_16: version disabled is fine
+    # bridgecrew:skip=BC_AWS_S3_24: MFA off
 }
