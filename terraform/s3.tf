@@ -1,4 +1,5 @@
 resource "aws_s3_bucket" "toxic" {
+	# checkov:skip=CKV_AWS_144: ADD REASON
 
 # Two suppression formats:
 # checkov:skip:
