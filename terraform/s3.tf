@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "toxic" {
-
+bucket="jimsfirstbucket"
 # Two suppression formats:
 # checkov:skip:
 # or
