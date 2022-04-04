@@ -16,6 +16,16 @@ resource "aws_s3_bucket" "duff_log_bucket" {
   bucket = "duff-log-bucket"
 }
 
+
+resource "aws_s3_bucket_versioning" "duff_log_bucket" {
+  bucket = aws_s3_bucket.duff_log_bucket.id
+
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
+}
+
 resource "aws_s3_bucket_logging" "duff" {
   bucket = aws_s3_bucket.duff.id
 
