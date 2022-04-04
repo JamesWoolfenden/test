@@ -3,7 +3,7 @@
 default_language_version:
   python: python3.8
 repos:
-  - repo: git://github.com/adrienverge/yamllint
+  - repo: https://github.com/adrienverge/yamllint
     rev: v1.26.3
     hooks:
       - id: yamllint
@@ -12,13 +12,13 @@ repos:
         entry: yamllint
         language: python
         types: [file, yaml]
-  - repo: git://github.com/aws-cloudformation/cfn-python-lint
-    rev: v0.54.2  # The version of cfn-lint to use
+  - repo: https://github.com/aws-cloudformation/cfn-python-lint
+    rev: v0.58.4  # The version of cfn-lint to use
     hooks:
       - id: cfn-python-lint
         files: serverless/.*\.(json|yml|yaml)$
-  - repo: git://github.com/bridgecrewio/checkov
-    rev: 2.0.495
+  - repo: https://github.com/bridgecrewio/checkov
+    rev: 2.0.1032
     hooks:
       - id: checkov
         verbose: true
