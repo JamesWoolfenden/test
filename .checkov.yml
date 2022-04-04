@@ -1,0 +1,42 @@
+---
+branch: master
+directory:
+- .
+download-external-modules: false
+evaluate-variables: true
+external-modules-download-path: .external_modules
+framework:
+- terraform
+skip-check:
+- CKV_AWS_118
+- CKV_AWS_126
+- CKV_AWS_129
+- CKV_AWS_135
+- CKV_AWS_144
+- CKV_AWS_145
+- CKV_AWS_150
+- CKV_AWS_152
+- CKV_AWS_157
+- CKV_AWS_16
+- CKV_AWS_161
+- CKV_AWS_18
+- CKV_AWS_19
+- CKV_AWS_196
+- CKV_AWS_21
+- CKV_AWS_226
+- CKV_AWS_23
+- CKV_AWS_41
+- CKV_AWS_79
+- CKV_AWS_8
+- CKV_AWS_91
+- CKV_AZURE_3
+- CKV_AZURE_33
+- CKV_AZURE_35
+- CKV_AZURE_44
+- CKV_SECRET_6
+- CKV2_AWS_19
+- CKV2_AWS_5
+- CKV2_AWS_6
+- CKV2_AZURE_1
+- CKV2_AZURE_18
+soft-fail-on:

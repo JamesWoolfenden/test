@@ -2,3 +2,4 @@
 .terraform
 .pytest_cache
 .DS_Store
+.terraform.lock.hcl
