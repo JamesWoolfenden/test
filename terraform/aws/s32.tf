@@ -24,7 +24,7 @@ resource "aws_s3_bucket_versioning" "duff_log_bucket" {
     status = "Enabled"
   }
 }
-}
+
 
 resource "aws_s3_bucket_logging" "duff" {
   bucket = aws_s3_bucket.duff.id
