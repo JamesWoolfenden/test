@@ -11,3 +11,14 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "duff" {
     }
   }
 }
+
+resource "aws_s3_bucket" "duff_log_bucket" {
+  bucket = "duff-log-bucket"
+}
+
+resource "aws_s3_bucket_logging" "duff" {
+  bucket = aws_s3_bucket.duff.id
+
+  target_bucket = aws_s3_bucket.duff_log_bucket.id
+  target_prefix = "log/"
+}
