@@ -22,3 +22,11 @@ resource "aws_s3_bucket_logging" "duff" {
   target_bucket = aws_s3_bucket.duff_log_bucket.id
   target_prefix = "log/"
 }
+
+resource "aws_s3_bucket_versioning" "duff" {
+  bucket = aws_s3_bucket.duff.id
+
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
