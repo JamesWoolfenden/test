@@ -36,6 +36,10 @@ jobs:
         with:
           directory: ./terraform
           soft_fail: true
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}    
       - name: az cli
         uses: azure/cli@v1.0.7
         with:
