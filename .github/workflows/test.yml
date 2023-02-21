@@ -25,7 +25,7 @@ jobs:
       - name: checkov 
         uses: bridgecrewio/checkov-action@master
         with:
-        directory: ./terraform
+          directory: ./terraform
       - name: az cli
         uses: azure/CLI@v1
         with:
