@@ -29,5 +29,4 @@ jobs:
       - name: az cli
         uses: azure/CLI@v1
         with:
-        inlineScript: |
-        az storage account list
+        inlineScript: az storage account list
