@@ -22,6 +22,10 @@ jobs:
           ref: ${{ env.branch }}
           token: ${{ github.token }}
           fetch-depth: '0'
+      - name: az cli
+        uses: azure/cli@v1.0.7
+        with:
+          inlineScript: az storage account list    
       - name: checkov 
         uses: bridgecrewio/checkov-action@master
         with:
