@@ -28,6 +28,6 @@ jobs:
           directory: ./terraform
           soft_fail: true
       - name: az cli
-        uses: azure/cli@v1.07
+        uses: azure/cli@v1.0.7
         with:
           inlineScript: az storage account list
