@@ -46,3 +46,6 @@ jobs:
         uses: azure/cli@v1.0.7
         with:
           inlineScript: az storage account list
+        env:
+          CHECKOV_RESULTS: ""
+          
